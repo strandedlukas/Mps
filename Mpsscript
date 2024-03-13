@@ -1,0 +1,277 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "⚽️ Complex UI (MPS FUNCTION) ⚽️", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <complex> - The name of the UI.
+HidePremium = <true> - Whether or not the user details shows Premium status or not.
+SaveConfig = <true> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <sigma> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local MainTab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <Main> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <false> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = MainTab:AddSection({
+	Name = "Reach GUIS"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+OrionLib:MakeNotification({
+	Name = "thanks for using complex ui!",
+	Content = "By strandedlukas",
+	Image = "rbxassetid://4483345998",
+	Time = 7
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+MainTab:AddButton({
+	Name = "10 studs (most preffered)",
+	Callback = function()
+      	local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local rightLeg = character:FindFirstChild("Right Leg")
+
+if rightLeg then
+    local originalSize = rightLeg.Size
+    local newSize = Vector3.new(originalSize.X + 10, originalSize.Y, originalSize.Z)
+    rightLeg.Size = newSize
+    print("Right leg width increased by 10 studs!")
+else
+    warn("Right leg not found!")
+end
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "9 Studs",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local rightLeg = character:FindFirstChild("Right Leg")
+
+if rightLeg then
+    local originalSize = rightLeg.Size
+    local newSize = Vector3.new(originalSize.X + 9, originalSize.Y, originalSize.Z)
+    rightLeg.Size = newSize
+    print("Right leg width increased by 10 studs!")
+else
+    warn("Right leg not found!")
+end
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "8 studs",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local rightLeg = character:FindFirstChild("Right Leg")
+
+if rightLeg then
+    local originalSize = rightLeg.Size
+    local newSize = Vector3.new(originalSize.X + 8, originalSize.Y, originalSize.Z)
+    rightLeg.Size = newSize
+    print("Right leg width increased by 10 studs!")
+else
+    warn("Right leg not found!")
+end
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "7 Studs",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local rightLeg = character:FindFirstChild("Right Leg")
+
+if rightLeg then
+    local originalSize = rightLeg.Size
+    local newSize = Vector3.new(originalSize.X + 7, originalSize.Y, originalSize.Z)
+    rightLeg.Size = newSize
+    print("Right leg width increased by 10 studs!")
+else
+    warn("Right leg not found!")
+end
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "6 Studs",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local rightLeg = character:FindFirstChild("Right Leg")
+
+if rightLeg then
+    local originalSize = rightLeg.Size
+    local newSize = Vector3.new(originalSize.X + 6, originalSize.Y, originalSize.Z)
+    rightLeg.Size = newSize
+    print("Right leg width increased by 10 studs!")
+else
+    warn("Right leg not found!")
+end
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "5 Studs",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local rightLeg = character:FindFirstChild("Right Leg")
+
+if rightLeg then
+    local originalSize = rightLeg.Size
+    local newSize = Vector3.new(originalSize.X + 5, originalSize.Y, originalSize.Z)
+    rightLeg.Size = newSize
+    print("Right leg width increased by 10 studs!")
+else
+    warn("Right leg not found!")
+end
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "4 Studs (Most legit)",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local rightLeg = character:FindFirstChild("Right Leg")
+
+if rightLeg then
+    local originalSize = rightLeg.Size
+    local newSize = Vector3.new(originalSize.X + 4, originalSize.Y, originalSize.Z)
+    rightLeg.Size = newSize
+    print("Right leg width increased by 10 studs!")
+else
+    warn("Right leg not found!")
+end
+)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = MainTab:AddSection({
+	Name = "Fun stuff"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+MainTab:AddButton({
+	Name = "resolution script by strandedlukas",
+	Callback = function()
+      		getgenv().Resolution = {
+    [".gg/scripters"] = 0.75
+}
+
+local Camera = workspace.CurrentCamera
+if getgenv().gg_scripters == nil then
+    game:GetService("RunService").RenderStepped:Connect(
+        function()
+            Camera.CFrame = Camera.CFrame * CFrame.new(0, 0, 0, 1, 0, 0, 0, getgenv().Resolution[".gg/scripters"], 0, 0, 0, 1)
+        end
+    )
+end
+getgenv().gg_scripters = "Aori0001"
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "Inf yeild",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "FPS Booster by strandedlukas",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/strandedlukas/Fps-booster-/main/Fps%20booster"))();
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddParagraph("⚠️ IMPORTANT ⚠️","Remember you noobs, this dosent have an anti cheat currently, using this script in games that have an anti cheat detect for charecter limbsize would get you banned.")
+
+OrionLib:Init()
